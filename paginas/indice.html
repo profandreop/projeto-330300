@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Índice 3-30-300</title>
+
+    <style>
+
+        body{
+            margin:0;
+            font-family:Arial, Helvetica, sans-serif;
+            background:#f4f4f4;
+            color:#222;
+        }
+
+        nav{
+            background:#1b4332;
+            padding:15px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:15px;
+            font-weight:bold;
+        }
+
+        header{
+            background:#2d6a4f;
+            color:white;
+            text-align:center;
+            padding:50px 20px;
+        }
+
+        header h1{
+            margin:0;
+            font-size:2.5em;
+        }
+
+        main{
+            max-width:1100px;
+            margin:auto;
+            padding:40px 20px;
+        }
+
+        section{
+            background:white;
+            padding:30px;
+            border-radius:12px;
+            margin-bottom:30px;
+            box-shadow:0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        h2{
+            color:#1b4332;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:20px;
+        }
+
+        table, th, td{
+            border:1px solid #ccc;
+        }
+
+        th{
+            background:#1b4332;
+            color:white;
+        }
+
+        th, td{
+            padding:12px;
+            text-align:center;
+        }
+
+        .resultado{
+            text-align:center;
+            padding:30px;
+            background:#edf6f9;
+            border-radius:12px;
+            margin-top:20px;
+        }
+
+        .indice{
+            font-size:3em;
+            color:#1b4332;
+            font-weight:bold;
+        }
+
+        .classificacao{
+            font-size:1.5em;
+            margin-top:10px;
+        }
+
+        footer{
+            background:#081c15;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+
+        code{
+            background:#eee;
+            padding:3px 6px;
+            border-radius:5px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+
+        <a href="../index.html">Início</a>
+
+        <a href="metodologia.html">Metodologia</a>
+
+        <a href="graficos.html">Gráficos</a>
+
+        <a href="indice.html">Índice</a>
+
+    </nav>
+
+    <header>
+
+        <h1>📐 Índice 3-30-300</h1>
+
+        <p>
+            Proposta de índice composto para avaliação da saúde verde urbana.
+        </p>
+
+    </header>
+
+    <main>
+
+        <section>
+
+            <h2>🌳 O que é o índice?</h2>
+
+            <p>
+                O índice 3-30-300 foi desenvolvido para sintetizar os três
+                parâmetros do método 3-30-300 em um único indicador numérico,
+                permitindo avaliar a qualidade ambiental urbana do bairro.
+            </p>
+
+        </section>
+
+        <section>
+
+            <h2>🧮 Fórmula geral</h2>
+
+            <p>
+
+                I = (P₃ + P₃₀ + P₃₀₀) / 3
+
+            </p>
+
+            <p>
+                Onde:
+            </p>
+
+            <ul>
+
+                <li><strong>P₃</strong> = percentual da população atendida no critério “3”;</li>
+
+                <li><strong>P₃₀</strong> = percentual normalizado da cobertura vegetal;</li>
+
+                <li><strong>P₃₀₀</strong> = percentual de cobertura das áreas verdes em um raio de 300m.</li>
+
+            </ul>
+
+        </section>
+
+        <section>
+
+            <h2>📊 Normalização do parâmetro 30</h2>
+
+            <p>
+                Como a meta do método estabelece 30% de cobertura vegetal,
+                o parâmetro P₃₀ foi normalizado utilizando:
+            </p>
+
+            <p>
+
+                P₃₀ = min(C / 0,30 ; 1)
+
+            </p>
+
+            <p>
+
+                Onde:
+            </p>
+
+            <ul>
+
+                <li><strong>C</strong> = cobertura vegetal observada;</li>
+
+                <li><strong>0,30</strong> = meta ideal do método 3-30-300;</li>
+
+                <li><strong>min</strong> limita o valor máximo em 1.</li>
+
+            </ul>
+
+        </section>
+
+        <section>
+
+            <h2>📈 Aplicação aos dados do bairro</h2>
+
+            <table>
+
+                <tr>
+                    <th>Parâmetro</th>
+                    <th>Valor bruto</th>
+                    <th>Valor normalizado</th>
+                </tr>
+
+                <tr>
+                    <td>P₃</td>
+                    <td>53,57%</td>
+                    <td>0,5357</td>
+                </tr>
+
+                <tr>
+                    <td>P₃₀</td>
+                    <td>14,41%</td>
+                    <td>0,4803</td>
+                </tr>
+
+                <tr>
+                    <td>P₃₀₀</td>
+                    <td>40,37%</td>
+                    <td>0,4037</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+        <section>
+
+            <h2>🧠 Resultado do índice</h2>
+
+            <p>
+
+                I = (0,5357 + 0,4803 + 0,4037) / 3
+
+            </p>
+
+            <div class="resultado">
+
+                <div class="indice">
+                    0,473
+                </div>
+
+                <div class="classificacao">
+                    🟡 Classificação: Baixa
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <h2>🌡️ Escala de classificação</h2>
+
+            <table>
+
+                <tr>
+                    <th>Faixa</th>
+                    <th>Classificação</th>
+                </tr>
+
+                <tr>
+                    <td>0 – 0,25</td>
+                    <td>Muito baixa</td>
+                </tr>
+
+                <tr>
+                    <td>0,26 – 0,50</td>
+                    <td>Baixa</td>
+                </tr>
+
+                <tr>
+                    <td>0,51 – 0,75</td>
+                    <td>Média</td>
+                </tr>
+
+                <tr>
+                    <td>0,76 – 1,00</td>
+                    <td>Alta</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        Projeto 3-30-300 Manaus
+
+    </footer>
+
+</body>
+
+</html>
