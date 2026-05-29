@@ -6,14 +6,22 @@
     <title>Metodologia</title>
         .galeria{
     display:flex;
+    justify-content:center;
+    align-items:flex-start;
     gap:20px;
     flex-wrap:wrap;
     margin-top:20px;
 }
 
-.galeria img{
+.foto{
+    width:320px;
+    text-align:center;
+}
+
+.foto img{
     width:100%;
-    max-width:400px;
+    height:220px;
+    object-fit:cover;
     border-radius:12px;
     box-shadow:0 2px 8px rgba(0,0,0,0.15);
 }
@@ -92,7 +100,7 @@
             </p>
                     <div class="galeria">
 
-    <div>
+    <div class="foto">
 
         <img src="../assets/imagens/IMG-20260414-WA0041-lua.jpg" alt="Entrevista com morador">
 
@@ -102,7 +110,7 @@
 
     </div>
 
-    <div>
+    <div class="foto">
 
         <img src="../assets/imagens/IMG-20260428-WA0020-nath.jpg" alt="Entrevista com morador">
 
