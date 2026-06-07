@@ -75,6 +75,49 @@
             margin-top:40px;
         }
 
+        /* CARROSSEL */
+
+        .carousel-container{
+            text-align:center;
+            margin-top:20px;
+        }
+
+        .carousel-controls{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            gap:20px;
+            margin-bottom:20px;
+        }
+
+        .carousel-btn{
+            background:#1b4332;
+            color:white;
+            border:none;
+            border-radius:8px;
+            padding:10px 16px;
+            font-size:1.2em;
+            cursor:pointer;
+        }
+
+        .carousel-btn:hover{
+            background:#2d6a4f;
+        }
+
+        .carousel-title{
+            font-weight:bold;
+            color:#1b4332;
+            min-width:220px;
+        }
+
+        .carousel-slide{
+            display:none;
+        }
+
+        .carousel-slide.active{
+            display:block;
+        }
+
     </style>
 
 </head>
@@ -89,9 +132,9 @@
 
         <a href="resultados.html">Resultados</a>
 
-		<a href="indice.html">Índice</a>
+        <a href="indice.html">Índice</a>
 
-		<a href="dados-complementares.html">Dados Complementares</a>
+        <a href="dados-complementares.html">Dados Complementares</a>
 
     </nav>
 
@@ -109,7 +152,7 @@
 
         <section>
 
-            <h2>📈 Parâmetro "3" </h2>
+            <h2>📈 Parâmetro "3"</h2>
 
             <p>
                 3 árvores: Todo cidadão deve conseguir enxergar pelo menos 3 árvores de bom porte da janela de casa, escola ou trabalho.
@@ -118,9 +161,12 @@
             <div class="grafico">
 
                 <div class="flourish-embed flourish-chart" data-src="visualisation/29081101">
-		           
-		            <noscript><img src="https://public.flourish.studio/visualisation/29081101/thumbnail" width="100%" alt="chart visualization" /></noscript>
-		        </div>
+                    <noscript>
+                        <img src="https://public.flourish.studio/visualisation/29081101/thumbnail"
+                             width="100%"
+                             alt="chart visualization" />
+                    </noscript>
+                </div>
 
             </div>
 
@@ -128,7 +174,7 @@
 
         <section>
 
-            <h2>🌳 Parâmetro "30" </h2>
+            <h2>🌳 Parâmetro "30"</h2>
 
             <p>
                 30% de verde: Cada bairro deve possuir uma cobertura de copas de árvores de, no mínimo, 30%.
@@ -137,63 +183,68 @@
             <div class="grafico">
 
                 <div class="flourish-embed flourish-survey" data-src="visualisation/29123904">
-				
-					<noscript><img src="https://public.flourish.studio/visualisation/29123904/thumbnail" width="100%" alt="survey visualization" /></noscript>
-				</div>
+                    <noscript>
+                        <img src="https://public.flourish.studio/visualisation/29123904/thumbnail"
+                             width="100%"
+                             alt="survey visualization" />
+                    </noscript>
+                </div>
 
             </div>
 
         </section>
 
-   <section>
+        <section>
 
-    <h2>🌳 Parâmetro "300"</h2>
+            <h2>🌳 Parâmetro "300"</h2>
 
-    <p>
-        300 metros da área verde: Todo residente deve morar a uma distância máxima de 300 metros de um parque ou espaço verde público de qualidade.
-    </p>
+            <p>
+                300 metros da área verde: Todo residente deve morar a uma distância máxima de 300 metros de um parque ou espaço verde público de qualidade.
+            </p>
 
-    <div class="seletor-grafico">
+            <div class="carousel-container">
 
-        <label for="seletor300"><strong>Visualização:</strong></label>
+                <div class="carousel-controls">
 
-        <select id="seletor300">
+                    <button class="carousel-btn" onclick="mudarGrafico(-1)">◀</button>
 
-            <option value="g1">Área atendida (%)</option>
+                    <div id="tituloGrafico" class="carousel-title">
+                        Área atendida (%)
+                    </div>
 
-            <option value="g2">Área atendida (m²)</option>
+                    <button class="carousel-btn" onclick="mudarGrafico(1)">▶</button>
 
-        </select>
+                </div>
 
-    </div>
+                <div id="slide1" class="carousel-slide active">
 
-    <div id="g1" class="grafico">
-<script src="https://public.flourish.studio/resources/embed.js"></script>
-        <div class="flourish-embed flourish-chart"
-             data-src="visualisation/29120076">
-            <noscript>
-                <img src="https://public.flourish.studio/visualisation/29120076/thumbnail"
-                     width="100%"
-                     alt="Área atendida em porcentagem">
-            </noscript>
-        </div>
+                    <div class="flourish-embed flourish-chart"
+                         data-src="visualisation/29120076">
+                        <noscript>
+                            <img src="https://public.flourish.studio/visualisation/29120076/thumbnail"
+                                 width="100%"
+                                 alt="Área atendida em porcentagem">
+                        </noscript>
+                    </div>
 
-    </div>
+                </div>
 
-    <div id="g2" class="grafico">
+                <div id="slide2" class="carousel-slide">
 
-        <div class="flourish-embed flourish-chart"
-             data-src="visualisation/29081039">
-            <noscript>
-                <img src="https://public.flourish.studio/visualisation/29081039/thumbnail"
-                     width="100%"
-                     alt="Área atendida em metros quadrados">
-            </noscript>
-        </div>
+                    <div class="flourish-embed flourish-chart"
+                         data-src="visualisation/29081039">
+                        <noscript>
+                            <img src="https://public.flourish.studio/visualisation/29081039/thumbnail"
+                                 width="100%"
+                                 alt="Área atendida em metros quadrados">
+                        </noscript>
+                    </div>
 
-    </div>
+                </div>
 
-</section>
+            </div>
+
+        </section>
 
     </main>
 
@@ -202,6 +253,53 @@
         Projeto 3-30-300 Manaus
 
     </footer>
+
+    <script src="https://public.flourish.studio/resources/embed.js"></script>
+
+    <script>
+
+        let slideAtual = 0;
+
+        const slides = [
+            document.getElementById("slide1"),
+            document.getElementById("slide2")
+        ];
+
+        const titulos = [
+            "Área atendida (%)",
+            "Área atendida (m²)"
+        ];
+
+        function mostrarSlide(indice){
+
+            slides.forEach(slide => {
+                slide.classList.remove("active");
+            });
+
+            slides[indice].classList.add("active");
+
+            document.getElementById("tituloGrafico").textContent =
+                titulos[indice];
+        }
+
+        function mudarGrafico(direcao){
+
+            slideAtual += direcao;
+
+            if(slideAtual < 0){
+                slideAtual = slides.length - 1;
+            }
+
+            if(slideAtual >= slides.length){
+                slideAtual = 0;
+            }
+
+            mostrarSlide(slideAtual);
+        }
+
+        mostrarSlide(0);
+
+    </script>
 
 </body>
 
