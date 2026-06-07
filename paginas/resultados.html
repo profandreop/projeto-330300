@@ -145,7 +145,7 @@
 
         </section>
 
-       <section>
+   <section>
 
     <h2>🌳 Parâmetro "300"</h2>
 
@@ -153,15 +153,17 @@
         300 metros da área verde: Todo residente deve morar a uma distância máxima de 300 metros de um parque ou espaço verde público de qualidade.
     </p>
 
-    <div class="tabs">
+    <div class="seletor-grafico">
 
-        <button onclick="mostrarGrafico('g1')">
-            Área atendida (%)
-        </button>
+        <label for="seletor300"><strong>Visualização:</strong></label>
 
-        <button onclick="mostrarGrafico('g2')">
-            Área atendida (m²)
-        </button>
+        <select id="seletor300">
+
+            <option value="g1">Área atendida (%)</option>
+
+            <option value="g2">Área atendida (m²)</option>
+
+        </select>
 
     </div>
 
@@ -169,7 +171,6 @@
 
         <div class="flourish-embed flourish-chart"
              data-src="visualisation/29120076">
-           
             <noscript>
                 <img src="https://public.flourish.studio/visualisation/29120076/thumbnail"
                      width="100%"
@@ -179,11 +180,10 @@
 
     </div>
 
-    <div id="g2" class="grafico" style="display:none;">
+    <div id="g2" class="grafico">
 
         <div class="flourish-embed flourish-chart"
              data-src="visualisation/29081039">
-           
             <noscript>
                 <img src="https://public.flourish.studio/visualisation/29081039/thumbnail"
                      width="100%"
