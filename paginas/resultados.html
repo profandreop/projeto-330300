@@ -153,11 +153,22 @@
         300 metros da área verde: Todo residente deve morar a uma distância máxima de 300 metros de um parque ou espaço verde público de qualidade.
     </p>
 
-    <h3>Área atendida (%)</h3>
+    <div class="tabs">
 
-    <div class="grafico">
+        <button onclick="mostrarGrafico('g1')">
+            Área atendida (%)
+        </button>
 
-        <div class="flourish-embed flourish-chart" data-src="visualisation/29120076">
+        <button onclick="mostrarGrafico('g2')">
+            Área atendida (m²)
+        </button>
+
+    </div>
+
+    <div id="g1" class="grafico">
+
+        <div class="flourish-embed flourish-chart"
+             data-src="visualisation/29120076">
             <script src="https://public.flourish.studio/resources/embed.js"></script>
             <noscript>
                 <img src="https://public.flourish.studio/visualisation/29120076/thumbnail"
@@ -168,11 +179,10 @@
 
     </div>
 
-    <h3>Área atendida (m²)</h3>
+    <div id="g2" class="grafico" style="display:none;">
 
-    <div class="grafico">
-
-        <div class="flourish-embed flourish-chart" data-src="visualisation/29081039">
+        <div class="flourish-embed flourish-chart"
+             data-src="visualisation/29081039">
             <script src="https://public.flourish.studio/resources/embed.js"></script>
             <noscript>
                 <img src="https://public.flourish.studio/visualisation/29081039/thumbnail"
